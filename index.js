@@ -48,11 +48,13 @@ totalPrice = modelPrice + colorPrice + batteryPrice;
 console.log( "Calculating your total..." );
 
 // Display total price
-console.log( `Base price for model ${userInput}:` );
+console.log( `Base price for model ${userInput}: +${modelPrice}` );
 
-console.log(`color selected: ${userInput2}`);
+console.log(`color selected: ${userInput2}: +${colorPrice}`);
 
-console.log(`long-range battery upgrade: ${userInput3}`);
+console.log(`long-range battery upgrade: ${userInput3}: +${batteryPrice}`);
 
 
-console.log( `Your total price is: $${price}` );
+console.log( `Your total price is: $${totalPrice}` );
+
+console.log( "Thank you for visiting the Tesla showroom!" );
